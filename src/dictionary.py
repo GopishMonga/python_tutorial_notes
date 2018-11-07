@@ -16,7 +16,14 @@ print_dictionary(man)
 ## Using [key]  ===> only use when key exists, otherwise error is thrown
 firstName = man["firstName"]
 print("firstName = " + firstName)
+print()
 
 ## Using get method ===> returns None if key not found, also default value can be given
 height = man.get("height","5 feet 8 inches")
 print("height = " + height)
+print()
+
+# Adding elements
+print("Adding height")
+man["height"] = "5 feet 8 inches"
+print_dictionary(man)
