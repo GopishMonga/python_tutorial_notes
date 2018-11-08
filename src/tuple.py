@@ -3,7 +3,7 @@ Tuple1 = ()
 print("Initial empty Tuple: ")
 print (Tuple1)
 
-# Creating a Tuple with the use of Strings 
+# Creating a Tuple with the use of Strings
 Tuple1 = ('Geeks', 'For')
 print("\nTuple with the use of String: ")
 print(Tuple1)
@@ -42,3 +42,41 @@ print(Tuple3)
 Tuple1 = ('Geeks',) * 3
 print("\nTuple with repetition: ")
 print(Tuple1)
+
+# Concatenaton of tuples
+Tuple1 = (0, 1, 2, 3)
+Tuple2 = ('Geeks', 'For', 'Geeks')
+
+Tuple3 = Tuple1 + Tuple2
+
+# Printing first Tuple
+print("Tuple 1: ")
+print(Tuple1)
+
+# Printing Second Tuple
+print("\nTuple2: ")
+print(Tuple2)
+
+# Printing Final Tuple
+print("\nTuples after Concatenaton: ")
+print(Tuple3)
+
+# Slicing of a Tuple with Numbers
+Tuple1 = tuple('GEEKSFORGEEKS')
+
+# Removing First element
+print("Removal of First Element: ")
+print(Tuple1[1:])
+
+# Reversing the Tuple
+print("\nTuple after sequence of Element is reversed: ")
+print(Tuple1[::-1])
+
+# Printing elements of a Range
+print("\nPrinting elements between Range 4-9: ")
+print(Tuple1[4:9])
+
+# Deleting a Tuple
+Tuple1 = (0, 1, 2, 3, 4)
+del Tuple1
+## print(Tuple1) will throw error
