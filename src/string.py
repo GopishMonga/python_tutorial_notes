@@ -34,3 +34,12 @@ print(last_char)
 ## Slicing can be used to access substrings
 print(name[3:6])
 print(name[3:-2])
+
+## Strings are immutable, so they can't be updated
+## So, we need to create new string and assign to same variable
+name = name + "!!!"
+print(name)
+
+## Deleting Strings
+del name
+### print(name) will through an error "name is not defined" 
