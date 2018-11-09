@@ -78,3 +78,49 @@ print(set1)
 set1.clear()
 print("\nSet after clearing all the elements: ")
 print(set1)
+
+# Frozen sets in Python are immutable objects that only support methods and
+# operators that produce a result without affecting the frozen set or
+# sets to which they are applied.
+
+# Initialization of empty frozen set
+print("\nInitialized frozen set")
+print(frozenset())
+
+# Initialization of non-empty frozen set
+frozen_set1 = frozenset("GEEKSFORGEEKS")
+print(frozen_set1)
+
+# Set Operations can be also be performed in python
+set1 = set([1,2,3,4])
+set2 = set([3,4,5,6])
+print(set1)
+print(set2)
+# Union Operation
+print("\nUnion of Sets")
+set3 = set1.union(set2)
+print(set3)
+# Intersection
+print("\nIntersection of Sets")
+set4 = set1.intersection(set2)
+print(set4)
+# Difference
+print("\nDifference of Sets")
+set5 = set1.difference(set2)
+print(set5)
+# Disjoint function
+print("set1 and set2 are disjoint?", set1.isdisjoint(set2))
+print("set4 and set5 are disjoint?", set4.isdisjoint(set5))
+# Subset function
+A = {1, 2, 3}
+B = {1, 2, 3, 4, 5}
+C = {1, 2, 4, 5}
+print(A.issubset(B))
+print(B.issubset(A))
+print(A.issubset(C))
+print(C.issubset(B))
+# Superset function
+print("A.issuperset(B) : ", A.issuperset(B))
+print("B.issuperset(A) : ", B.issuperset(A))
+print("A.issuperset(C) : ", A.issuperset(C))
+print("C.issuperset(B) : ", C.issuperset(B))
