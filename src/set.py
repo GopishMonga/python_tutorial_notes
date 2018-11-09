@@ -21,6 +21,13 @@ set1 = set(["hello",1,1,2,3,"world"])
 print('\nSet initialized with list')
 print(set1)
 
+# In order to create a copy of set, we should use copy method,
+# instead of "=" operator, as only reference is passed
+# i.e, if we edit reference then original set is updated as well
+set_copy = set1.copy()
+print("\nCopy of Set Created with copy function")
+print(set_copy)
+
 # Adding element to the Set
 set1.add(8)
 set1.add(9)
@@ -108,6 +115,10 @@ print(set4)
 print("\nDifference of Sets")
 set5 = set1.difference(set2)
 print(set5)
+# Symmetric Difference
+print("\nSymmetric Difference")
+set6 = set1.symmetric_difference(set2)
+print(set6)
 # Disjoint function
 print("set1 and set2 are disjoint?", set1.isdisjoint(set2))
 print("set4 and set5 are disjoint?", set4.isdisjoint(set5))
