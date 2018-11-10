@@ -134,5 +134,10 @@ for key in Dict.keys():
 
 # Accessing values
 print("\nValues in this dictionary are")
-for key in Dict.values():
-	print(key)
+for value in Dict.values():
+	print(value)
+
+# Accessing pair of key & value
+print("\nItems in this dictionary are")
+for item in Dict.items():
+	print(item)
