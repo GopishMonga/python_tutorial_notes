@@ -122,3 +122,12 @@ print(Dict)
 Dict.clear()
 print("\nDeleting Entire Dictionary: ")
 print(Dict)
+
+# Accessing keys
+Dict = { 5 : 'Welcome', 6 : 'To', 7 : 'Geeks',
+        'A' : {1 : 'Geeks', 2 : 'For', 3 : 'Geeks'},
+        'B' : {1 : 'Geeks', 2 : 'Life'}}
+print_dictionary(Dict)
+print("Keys in this dictionary are")
+for key in Dict.keys():
+	print(key)
